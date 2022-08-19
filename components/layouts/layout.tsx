@@ -3,8 +3,6 @@ import { Footer } from './footer'
 import { Navbar } from './navbar'
 
 export const Layout = ({ children }: any) => {
-  const [direction, setDirection] = useState('up')
-
   useEffect(() => {
     let scroll: any
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -18,12 +16,6 @@ export const Layout = ({ children }: any) => {
         repeat: true,
         getDirection: true,
       })
-
-      scroll.on('scroll', (e: any) => {
-        if (e.direction !== direction) {
-          setDirection(e.direction)
-        }
-      })
     })
 
     return () => {
@@ -33,8 +25,8 @@ export const Layout = ({ children }: any) => {
 
   return (
     <div data-scroll-container>
-      <Navbar className={direction === 'down' ? 'hidden' : ''} />
-      <main className="pt-16">{children}</main>
+      <Navbar />
+      <main>{children}</main>
       <Footer />
     </div>
   )
