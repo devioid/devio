@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react'
 import { Footer } from './footer'
 import { Navbar } from './navbar'
 
 export const Layout = ({ children }: any) => {
-  useEffect(() => {
+  /* useEffect(() => {
     let scroll: any
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
@@ -21,10 +20,10 @@ export const Layout = ({ children }: any) => {
     return () => {
       if (scroll) scroll.destroy()
     }
-  })
+  }) */
 
   return (
-    <div data-scroll-container>
+    <div>
       <Navbar />
       <main>{children}</main>
       <Footer />

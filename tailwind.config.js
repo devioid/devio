@@ -9,6 +9,13 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins'],
       },
+      colors: {
+        primary: '#223F81',
+        'primary-light': '#4970CB',
+      },
+      fontSize: {
+        '5hxl': '3.5rem',
+      },
     },
   },
   plugins: [],
