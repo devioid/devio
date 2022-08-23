@@ -8,7 +8,7 @@ export const Hero = () => {
       className="w-full bg-gradient-to-br from-primary to-primary-light px-8 pt-32 md:max-h-screen md:min-h-screen md:px-0 md:py-8 md:pt-10"
       data-scroll-section
     >
-      <div className="container mx-auto flex min-h-screen flex-col items-center gap-4 px-10 md:flex-row">
+      <div className="container mx-auto flex pb-10 sm:h-auto md:h-screen flex-col items-center gap-4 md:px-10 md:flex-row">
         <div className="my-auto w-full flex-1">
           <h6 className="mb-1 text-2xl font-medium tracking-wide text-amber-200">
             Welcome
@@ -27,13 +27,13 @@ export const Hero = () => {
             <button className={styles['btn-explore']}>Explore More</button>
           </div>
         </div>
-        <div className="my-auto flex-1">
+        <div className="my-auto hidden lg:flex lg:flex-1">
           <Image
             src={landing}
             alt="Test"
             className="w-100% h-auto rounded-lg shadow-lg"
-            width={600}
-            height={500}
+            // width={600}
+            // height={500}
           />
         </div>
       </div>
