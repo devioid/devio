@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <div className="h-36 bg-slate-100">
+    <footer className="h-36 bg-slate-100" data-scroll-section>
       <p>Footer</p>
-    </div>
+    </footer>
   )
 }

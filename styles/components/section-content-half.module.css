@@ -1,0 +1,11 @@
+.section-content-half {
+  @apply flex w-full flex-col items-center justify-center space-y-3 bg-white py-10 font-medium md:space-y-4 md:pt-20 md:pb-32;
+}
+
+.section-content-half .section-content-title {
+  @apply w-10/12 text-center text-4xl text-primary md:w-3/6 md:text-5xl lg:w-[35%] lg:leading-tight;
+}
+
+.section-content-half .section-content-description {
+  @apply w-5/6 text-center text-xl font-light text-primary md:w-[56%] md:text-2xl md:leading-normal;
+}

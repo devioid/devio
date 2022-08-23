@@ -1,3 +1,17 @@
+.header {
+  @apply fixed top-0 left-0 right-0 z-10 h-32 bg-transparent px-8 text-zinc-50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+html[data-direction='down'] .header {
+  transform: translate3d(0, -100%, 0);
+}
+
 .btn-contact {
   @apply rounded-full px-5 py-2 text-base;
   background-color: #e9c267;

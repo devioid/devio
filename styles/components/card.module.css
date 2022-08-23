@@ -1,0 +1,11 @@
+.card {
+  @apply flex flex-col justify-center rounded-4xl bg-white py-16 px-16 text-primary shadow-card;
+}
+
+.card .card-title {
+  @apply text-center text-3xl font-medium;
+}
+
+.card .card-body {
+  @apply mt-7 text-center text-lg leading-tight;
+}

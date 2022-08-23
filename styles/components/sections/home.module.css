@@ -13,5 +13,5 @@
 }
 
 .btn-explore {
-  @apply bg-transparent ml-4 py-3 px-6 text-base tracking-wide text-white hover:rounded-lg hover:bg-gray-700 hover:bg-opacity-20;
+  @apply ml-4 inline-flex items-center bg-transparent py-3 px-6 text-base tracking-wide text-white hover:rounded-lg hover:bg-gray-700 hover:bg-opacity-20 gap-2;
 }

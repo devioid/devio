@@ -1,14 +1,16 @@
-import { Hero } from 'components/sections/hero'
+import { Home } from '@components/sections/home'
+import { Platforms } from '@components/sections/platforms'
 import { Services } from 'components/sections/services'
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   return (
     <>
-      <Hero />
-      <Services/>
+      <Home />
+      <Services />
+      <Platforms />
     </>
   )
 }
 
-export default Home
+export default Index
