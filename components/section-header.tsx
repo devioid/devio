@@ -12,6 +12,7 @@ export const SectionHeader = ({
   return (
     <div className={styles['section-header']}>
       <h2 className={styles['section-title']}>{title ?? 'Title here'}</h2>
+
       <p className={styles['section-description']}>{description ?? ''}</p>
     </div>
   )
