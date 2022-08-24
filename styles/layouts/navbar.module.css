@@ -9,7 +9,7 @@
 }
 
 .header-sm {
-  @apply fixed top-16 left-0 right-0 flex flex-col rounded-b-md bg-primary-light p-4 shadow-md md:hidden;
+  @apply fixed top-20 left-0 right-0 flex flex-col rounded-b-md bg-primary-light p-4 shadow-md md:hidden;
   transform: translate3d(0, 0, 0);
   transition: transform 0.25s ease-in-out;
 }
