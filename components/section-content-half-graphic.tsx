@@ -1,15 +1,19 @@
 import Image, { StaticImageData } from 'next/image'
+import { ReactNode } from 'react'
+// import { Component } from 'react'
 
 export const SectionContentHalfGraphic = ({
   imageSrc,
   header,
   description,
   reverse,
+  children,
 }: {
   imageSrc: StaticImageData
   header: string
   description: string
   reverse?: boolean
+  children?: ReactNode
 }) => {
   // Posisi grafiknya
   const imagePosition = !reverse ? "ml-0 md:ml-20 lg:ml-40" :
@@ -26,6 +30,7 @@ export const SectionContentHalfGraphic = ({
         <p className="mt-3 text-lg lg:text-xl xl:text-2xl font-light leading-snug text-primary">
           {description ?? 'Description goes here'}
         </p>
+        {children ? <span className='mt-3'>{children}</span> : ""}
       </div>
     </div>
   )
