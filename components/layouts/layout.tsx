@@ -28,7 +28,7 @@ export const Layout = ({ children }: any) => {
     return () => {
       if (scroll) scroll.destroy()
     }
-  })
+  }, [])
 
   return (
     <>
