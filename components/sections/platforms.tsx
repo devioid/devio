@@ -9,7 +9,7 @@ export const Platforms = () => {
         description="We can implement your idea into web, mobile and desktop app"
       />
 
-      <div className="md:px-30 grid grid-rows-3 md:grid-cols-3 gap-5 xl:gap-20 px-10 lg:px-36">
+      <div className="md:px-30 grid md:grid-cols-3 gap-5 xl:gap-20 px-10 lg:px-36">
         <Card
           title="Web Application 🌐"
           body="Web application is an app running on website, so, user don't need
