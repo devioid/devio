@@ -13,11 +13,8 @@ const Index: NextPage = () => {
       <Services />
       <Platforms />
       <WhyUs />
-<<<<<<< HEAD
-      <Showcase />
-=======
       <HowDoWeWork />
->>>>>>> section
+      <Showcase />
     </>
   )
 }
