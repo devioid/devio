@@ -49,12 +49,13 @@ export const HowDoWeWork = () => {
       />
 
       <div className="grid grid-cols-1 gap-y-16 text-primary md:grid-cols-3 md:gap-y-24">
-        {timelines.map((tl) => (
+        {timelines.map((tl, index) => (
           <TimelineCard
             no={tl.no}
             position={tl.position}
             title={tl.title}
             body={tl.body}
+            key={index}
           />
         ))}
       </div>
