@@ -1,5 +1,5 @@
 .header {
-  @apply fixed top-0 left-0 right-0 z-10 h-20 bg-transparent px-8 text-zinc-50 md:h-32 md:px-8;
+  @apply mx-auto fixed top-0 left-0 right-0 z-10 h-20 bg-transparent px-8 md:px-0 text-zinc-50 md:h-32 ;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
 }
 
 .header-sm {
-  @apply fixed top-20 left-0 right-0 flex flex-col rounded-b-md bg-primary-light p-4 shadow-md md:hidden;
+  @apply fixed top-20 left-0 right-0 flex flex-col rounded-b-md bg-primary-light p-4 px-8 shadow-md md:hidden;
   transform: translate3d(0, 0, 0);
   transition: transform 0.25s ease-in-out;
 }

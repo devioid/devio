@@ -16,11 +16,11 @@ export const SectionContentHalfGraphic = ({
   children?: ReactNode
 }) => {
   // Posisi grafiknya
-  const imagePosition = !reverse ? "ml-0 md:ml-20 lg:ml-40" :
-    "mr-0 md:mr-20 lg:mr-40"
+  const imagePosition = !reverse ? "pl-0 md:pl-16 lg:pl-24 xl:pl-40" :
+    "pr-0 md:pr-16 lg:pr-24 xl:pr-40"
 
   return (
-    <div className={'flex h-auto w-full ' + (reverse && 'flex-row-reverse')}>
+    <div className={'flex py-1 md:py-5 h-auto w-full ' + (reverse && 'flex-row-reverse')}>
       {/* <div className="h-full overflow-hidden bg-transparent md:w-1/2 ml-0 md:ml-20 lg:ml-40"> */}
       <div className={"h-full overflow-hidden bg-transparent md:w-1/2 " + imagePosition}>
         <Image src={imageSrc} alt="image" className='' objectFit='contain' layout="responsive"></Image>
