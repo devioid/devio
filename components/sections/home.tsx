@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '@styles/components/sections/home.module.css'
-import landing from '@assets/img/landing-illustration.svg'
+import landing from '@assets/img/landing-illustration.webp'
 import arrowRight from '@assets/img/arrow-right.svg'
 
 export const Home = () => {

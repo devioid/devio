@@ -3,8 +3,8 @@
 import { SectionContentHalf } from "@components/section-content-half"
 import { SectionHeader } from "@components/section-header"
 import { Badge } from "@components/badge"
-import academic from "@assets/img/academic.jpg"
-import accounting from "@assets/img/accounting.jpg"
+import academic from "@assets/img/academic.webp"
+import accounting from "@assets/img/accounting.webp"
 
 export const Showcase = () => {
   return (

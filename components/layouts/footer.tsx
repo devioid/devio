@@ -1,7 +1,45 @@
+import Image from 'next/image'
+import logo from '@assets/img/logo-white.png'
+import ig from '@assets/img/ig.svg'
+import web from '@assets/img/web.svg'
+import Link from 'next/link'
+
 export const Footer = () => {
   return (
-    <footer className="h-36 bg-slate-100" data-scroll-section>
-      <p>Footer</p>
+    <footer className="h-[36vh] bg-primary md:h-[42vh]" data-scroll-section>
+      <div className="h-full p-10 text-lg font-light text-white md:mx-40 md:flex md:flex-row md:items-center md:justify-between md:p-0">
+        <div className="inline-flex flex-col">
+          <div className="md:w-100 mb-10 w-32">
+            <Image src={logo} alt="Devio" layout="responsive" />
+          </div>
+          <p className="mb-2 hidden items-center gap-2 md:inline-flex">
+            <Image src={ig} layout="fixed" className="h-4 w-auto" />
+            devio.id
+          </p>
+          <p className="hidden items-center gap-2 md:inline-flex">
+            <Image src={web} layout="fixed" className="h-4 w-auto" />
+            www.devio.id
+          </p>
+        </div>
+
+        <div className="flex flex-row-reverse justify-between gap-x-4 text-xs md:mr-10 md:flex-row md:justify-end md:gap-x-44 md:text-base">
+          <div className="flex flex-col">
+            <p className="mb-4 font-medium md:mb-6">Links</p>
+            <Link href={'#home'}>Home</Link>
+            <Link href={'#services'}>Services</Link>
+            <Link href={'#why'}>Why Us</Link>
+            <Link href={'#how'}>How do we Work</Link>
+            <Link href={'#works'}>Our Works</Link>
+          </div>
+
+          <div className="flex flex-col">
+            <p className="mb-4 font-medium md:mb-6">Contact</p>
+            <p className="break-all">E. ideviocorp&#64;gmail.com</p>
+            <p>T. &#8211;</p>
+            <p className="mt-5 md:mt-4">&copy; Devio 2022</p>
+          </div>
+        </div>
+      </div>
     </footer>
   )
 }

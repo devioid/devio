@@ -1,3 +1,4 @@
+import { Ending } from '@components/sections/ending'
 import { Home } from '@components/sections/home'
 import { HowDoWeWork } from '@components/sections/how-do-we-work'
 import { Platforms } from '@components/sections/platforms'
@@ -15,6 +16,7 @@ const Index: NextPage = () => {
       <WhyUs />
       <HowDoWeWork />
       <Showcase />
+      <Ending />
     </>
   )
 }

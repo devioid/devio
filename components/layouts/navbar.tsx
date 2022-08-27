@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <div className={styles.header}>
       <div className="container mx-auto flex h-full w-full flex-row items-center justify-between md:px-10">
-        <div className="p relative my-auto h-9 w-28">
+        <div className="relative my-auto h-9 w-28">
           <Image
             src={logoWhite}
             alt="Devio"

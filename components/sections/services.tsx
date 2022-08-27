@@ -1,5 +1,5 @@
-import consultation from '@assets/img/consultation.jpg'
-import softwareDevelopment from '@assets/img/software-development.jpg'
+import consultation from '@assets/img/consultation.webp'
+import softwareDevelopment from '@assets/img/software-development.webp'
 import { SectionHeader } from '@components/section-header'
 import { SectionContentHalf } from '@components/section-content-half'
 
