@@ -1,4 +1,5 @@
 import { Home } from '@components/sections/home'
+import { HowDoWeWork } from '@components/sections/how-do-we-work'
 import { Platforms } from '@components/sections/platforms'
 import { Showcase } from '@components/sections/showcase'
 import { Services } from 'components/sections/services'
@@ -12,7 +13,11 @@ const Index: NextPage = () => {
       <Services />
       <Platforms />
       <WhyUs />
+<<<<<<< HEAD
       <Showcase />
+=======
+      <HowDoWeWork />
+>>>>>>> section
     </>
   )
 }

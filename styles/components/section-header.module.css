@@ -1,5 +1,5 @@
 .section-header {
-  @apply flex w-full flex-col items-center justify-center bg-white pt-12 pb-10 font-medium md:space-y-4 md:pt-20 md:pb-32;
+  @apply flex w-full flex-col items-center justify-center bg-transparent pt-12 pb-10 font-medium md:space-y-4 md:pt-20 md:pb-32;
 }
 
 .section-header .section-title {
@@ -7,5 +7,5 @@
 }
 
 .section-header .section-description {
-  @apply w-5/6 text-center text-xl font-light text-primary md:w-[56%] md:text-2xl md:leading-normal md:mt-6;
+  @apply w-5/6 text-center text-xl font-light text-primary md:mt-6 md:w-[56%] md:text-2xl md:leading-normal;
 }
