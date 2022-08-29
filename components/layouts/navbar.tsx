@@ -49,7 +49,11 @@ export const Navbar = () => {
       </div>
 
       {/* mobile menu */}
-      <div className={styles['header-sm'] + (isMenuOpen ? '' : ' hidden')}>
+      <div
+        className={
+          isMenuOpen ? styles['header-sm'] : styles['header-sm-hidden']
+        }
+      >
         <p className="group my-1 cursor-pointer transition duration-300 ease-in-out">
           <Link href="#home">Home</Link>
           <span className="block h-0.5 max-w-0 rounded-xl bg-white transition-all duration-500 group-hover:max-w-full"></span>

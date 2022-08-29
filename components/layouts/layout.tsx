@@ -22,6 +22,12 @@ export const Layout = ({ children }: any) => {
           'data-direction',
           instance.direction
         )
+
+        if (height && instance.scroll.y + height * 0.15 > height) {
+          document.documentElement.setAttribute('data-more', 'true')
+        } else {
+          document.documentElement.setAttribute('data-more', 'false')
+        }
       })
     })
 
