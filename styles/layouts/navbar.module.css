@@ -26,4 +26,5 @@ html[data-direction='down'] .header-sm {
   @apply mt-2 rounded-full px-5 py-2 text-base text-primary md:mt-0;
   background-color: #e9c267;
   color: #223f81;
+  /* tes */
 }
