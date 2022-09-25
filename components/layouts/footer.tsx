@@ -1,10 +1,18 @@
-import Image from 'next/image'
-import logo from '@assets/img/logo-white.png'
 import ig from '@assets/img/ig.svg'
+import logo from '@assets/img/logo-white.png'
 import web from '@assets/img/web.svg'
-import Link from 'next/link'
+import { ScrollContext } from 'contexts/scroll'
+import Image from 'next/image'
+import { useContext } from 'react'
 
 export const Footer = () => {
+  const scroll = useContext<any>(ScrollContext)
+
+  const scrollTo = (id: string) => {
+    const target = document.querySelector(id)
+    scroll.scrollTo(target)
+  }
+
   return (
     <footer className="h-[36vh] bg-primary md:h-[42vh]" data-scroll-section>
       <div className="h-full p-10 text-lg font-light text-white md:mx-40 md:flex md:flex-row md:items-center md:justify-between md:p-0">
@@ -25,11 +33,27 @@ export const Footer = () => {
         <div className="flex flex-row-reverse justify-between gap-x-4 text-xs md:mr-10 md:flex-row md:justify-end md:gap-x-44 md:text-base">
           <div className="flex flex-col">
             <p className="mb-4 font-medium md:mb-6">Links</p>
-            <Link href={'#home'}>Home</Link>
-            <Link href={'#services'}>Services</Link>
-            <Link href={'#why'}>Why Us</Link>
-            <Link href={'#how'}>How do we Work</Link>
-            <Link href={'#works'}>Our Works</Link>
+            <button className="text-start" onClick={() => scrollTo('#home')}>
+              Home
+            </button>
+            <button
+              className="text-start"
+              onClick={() => scrollTo('#services')}
+            >
+              Services
+            </button>
+            <button className="text-start" onClick={() => scrollTo('#why-us')}>
+              Why Us
+            </button>
+            <button
+              className="text-start"
+              onClick={() => scrollTo('#how-do-we-works')}
+            >
+              How do we Work
+            </button>
+            <button className="text-start" onClick={() => scrollTo('#works')}>
+              Our Works
+            </button>
           </div>
 
           <div className="flex flex-col">

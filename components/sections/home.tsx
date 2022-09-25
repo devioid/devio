@@ -6,7 +6,9 @@ import arrowRight from '@assets/img/arrow-right.svg'
 export const Home = () => {
   return (
     <section
+      id="home"
       className="w-full bg-gradient-to-br from-primary to-primary-light px-8 pt-24 md:max-h-screen md:min-h-screen md:px-0 md:py-8 md:pt-10"
+      data-scroll-section-id="home"
       data-scroll-section
     >
       <div className="container mx-auto flex flex-col items-center gap-4 pb-10 sm:h-auto md:h-screen md:flex-row md:px-10">

@@ -7,7 +7,12 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid'
 
 export const WhyUs = () => {
   return (
-    <section className="h-auto w-full" data-scroll-section>
+    <section
+      id="why-us"
+      className="h-auto w-full"
+      data-scroll-section-id="why-us"
+      data-scroll-section
+    >
       <SectionHeader title="Why choosing us?" description="" />
 
       <SectionContentHalfGraphic

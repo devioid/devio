@@ -5,7 +5,12 @@ import { SectionContentHalf } from '@components/section-content-half'
 
 export const Services = () => {
   return (
-    <section className="h-auto w-full" data-scroll-section>
+    <section
+      id="services"
+      className="o-section h-auto w-full"
+      data-scroll-section-id="services"
+      data-scroll-section
+    >
       <SectionHeader
         title="We provide various service for our client"
         description="Application is made base on client specification. Client can have their application running on the web, mobile (Android and iOS), or desktop."

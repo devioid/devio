@@ -42,7 +42,12 @@ export const HowDoWeWork = () => {
   ]
 
   return (
-    <section className="mt-16 w-full bg-slate-100 pb-16" data-scroll-section>
+    <section
+      id="how-do-we-work"
+      className="mt-16 w-full bg-slate-100 pb-16"
+      data-scroll-section-id="how-do-we-work"
+      data-scroll-section
+    >
       <SectionHeader
         title="How do we work?"
         description="We work based on Software Development Life Cycle (SDLC). By using this framework, we can minimize the amount of error during the development because we ensure the client know the product they want."
