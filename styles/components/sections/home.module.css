@@ -1,0 +1,17 @@
+.h-100 {
+  height: calc(100vh - 4rem);
+}
+
+.min-h-100 {
+  min-height: calc(100vh - 4rem);
+}
+
+.btn-contact {
+  @apply rounded-lg py-3 px-6 text-sm font-medium tracking-wide;
+  background-color: #e9c267;
+  color: #223f81;
+}
+
+.btn-explore {
+  @apply ml-4 inline-flex items-center bg-transparent py-3 px-6 text-base tracking-wide text-white hover:rounded-lg hover:bg-gray-700 hover:bg-opacity-20 gap-2;
+}
