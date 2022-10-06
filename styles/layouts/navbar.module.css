@@ -1,13 +1,9 @@
 .header {
-  @apply fixed top-0 left-0 right-0 z-10 mx-auto h-20 bg-transparent px-8 text-zinc-50 transition-all md:h-32 md:px-0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  @apply fixed top-0 left-0 right-0 z-10 mx-auto h-16 bg-transparent px-8 text-zinc-50 transition-all md:h-24 md:px-0;
 }
 
 .header-sm {
-  @apply fixed top-20 left-0 right-0 flex flex-col rounded-b-md bg-primary-light p-4 px-8 shadow-md transition-all md:hidden;
+  @apply fixed top-16 left-0 right-0 flex flex-col rounded-b-md bg-primary-light p-4 px-8 shadow-md transition-all md:hidden;
 }
 
 .header-sm-hidden {
@@ -23,15 +19,14 @@ html[data-direction='down'] .header-sm {
 }
 
 html[data-more='true'] .header {
-  background-color: #223f81;
+  @apply bg-primary/80 backdrop-blur-md;
 }
 
 html[data-more='false'] .header {
-  background-color: transparent;
+  @apply bg-transparent;
 }
 
 .btn-contact {
   @apply mt-2 rounded-full px-5 py-2 text-base text-primary md:mt-0;
   background-color: #e9c267;
-  color: #223f81;
 }

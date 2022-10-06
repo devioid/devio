@@ -5,64 +5,55 @@ export const ScrollContext = createContext({
   scroll: null,
 })
 
-export const ScrollProvider = ({
-  children,
-  options,
-}: {
-  children: any
-  options: any
-}) => {
+export const ScrollProvider = ({ children }: { children: any }) => {
   const { height, width } = useWindowDimensions()
   const [scroll, setScroll] = useState<any>(null)
 
   useEffect(() => {
     if (!scroll) {
-      ;(async () => {
-        try {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-
-          setScroll((state: any) => {
-            state = new LocomotiveScroll({
-              el:
-                document.querySelector('[data-scroll-container]') ?? undefined,
-              ...options,
-            })
-
-            state.on('scroll', (instance: any) => {
-              document.documentElement.setAttribute(
-                'data-direction',
-                instance.direction
-              )
-
-              if (width && width >= 786) {
-                if (height && instance.scroll.y + height * 0.9 > height) {
-                  document.documentElement.setAttribute('data-more', 'true')
-                } else {
-                  document.documentElement.setAttribute('data-more', 'false')
-                }
-              } else {
-                if (height && instance.scroll.y + height * 0.96 > height) {
-                  document.documentElement.setAttribute('data-more', 'true')
-                } else {
-                  document.documentElement.setAttribute('data-more', 'false')
-                }
-              }
-            })
-
-            return state
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      import('locomotive-scroll').then((LocomotiveScroll) => {
+        setScroll(
+          new LocomotiveScroll.default({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            getDirection: true,
           })
-        } catch (error) {
-          throw Error(`[SmoothScrollProvider]: ${error}`)
+        )
+      })
+    } else {
+      scroll.update()
+      scroll.on('scroll', (instance: any) => {
+        document.documentElement.setAttribute(
+          'data-direction',
+          instance.direction
+        )
+
+        if (width && width >= 786) {
+          if (height && instance.scroll.y + height * 0.9 > height) {
+            document.documentElement.setAttribute('data-more', 'true')
+          } else {
+            document.documentElement.setAttribute('data-more', 'false')
+          }
+        } else {
+          if (height && instance.scroll.y + height * 0.96 > height) {
+            document.documentElement.setAttribute('data-more', 'true')
+          } else {
+            document.documentElement.setAttribute('data-more', 'false')
+          }
         }
-      })()
+      })
     }
 
     return () => {
       scroll && scroll.destroy()
     }
-  }, [scroll]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [scroll])
+
+  if (!scroll) {
+    return <p>Loading...</p>
+  }
 
   return (
     <ScrollContext.Provider value={scroll}>{children}</ScrollContext.Provider>

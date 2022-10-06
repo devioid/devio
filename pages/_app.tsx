@@ -1,12 +1,12 @@
-import { Layout } from 'components/layouts/layout'
 import type { AppProps } from 'next/app'
 import '../styles/globals.css'
+import '../styles/locomotive-scroll.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <Layout>
+    <div data-scroll-container>
       <Component {...pageProps} />
-    </Layout>
+    </div>
   )
 }
 

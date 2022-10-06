@@ -44,7 +44,7 @@ export const HowDoWeWork = () => {
   return (
     <section
       id="how-do-we-work"
-      className="mt-16 w-full bg-slate-100 pb-16"
+      className="mt-16 min-h-screen w-full bg-slate-100 pb-16"
       data-scroll-section-id="how-do-we-work"
       data-scroll-section
     >
