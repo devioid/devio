@@ -31,14 +31,7 @@ export const Navbar = () => {
             <span className="block h-0.5 max-w-0 rounded-xl bg-white transition-all duration-500 group-hover:max-w-full"></span>
           </p>
           <p className="group cursor-pointer transition duration-300 ease-in-out">
-            <button
-              onClick={(e) => {
-                e.preventDefault()
-                scrollTo('#services')
-              }}
-            >
-              Services
-            </button>
+            <button onClick={() => scrollTo('#services')}>Services</button>
             <span className="block h-0.5 max-w-0 rounded-xl bg-white transition-all duration-500 group-hover:max-w-full"></span>
           </p>
           <p className="group cursor-pointer transition duration-300 ease-in-out">
