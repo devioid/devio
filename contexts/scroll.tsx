@@ -19,6 +19,12 @@ export const ScrollProvider = ({ children }: { children: any }) => {
             el: document.querySelector('[data-scroll-container]'),
             smooth: true,
             getDirection: true,
+            smartphone: {
+              smooth: true,
+            },
+            tablet: {
+              smooth: true,
+            },
           })
         )
       })
