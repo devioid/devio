@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
-import useWindowDimensions from 'hooks/useWindowDimensions'
+import { useWindowDimensions } from 'hooks'
 
 export const ScrollContext = createContext({
   scroll: null,

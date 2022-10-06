@@ -30,8 +30,6 @@ export const WhyUs = () => {
       >
         <Button text={'How Do We Work'} icon={<ArrowRightIcon />} />
       </SectionContentHalfGraphic>
-
-      {/* <BeakerIcon /> */}
     </section>
   )
 }
