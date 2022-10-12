@@ -21,11 +21,21 @@ export const Footer = () => {
             <Image src={logo} alt="Devio" layout="responsive" />
           </div>
           <p className="mb-2 hidden items-center gap-2 md:inline-flex">
-            <Image src={ig} layout="fixed" className="h-4 w-auto" />
+            <Image
+              src={ig}
+              alt="Instagram"
+              layout="fixed"
+              className="h-4 w-auto"
+            />
             devio.id
           </p>
           <p className="hidden items-center gap-2 md:inline-flex">
-            <Image src={web} layout="fixed" className="h-4 w-auto" />
+            <Image
+              src={web}
+              alt="Website"
+              layout="fixed"
+              className="h-4 w-auto"
+            />
             www.devio.id
           </p>
         </div>

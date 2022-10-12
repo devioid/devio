@@ -29,14 +29,14 @@ export const Home = () => {
             <button className={styles['btn-contact']}>Contact Us</button>
             <button className={styles['btn-explore']}>
               Explore More
-              <Image src={arrowRight} />
+              <Image src={arrowRight} alt="Explore More" />
             </button>
           </div>
         </div>
         <div className="my-auto hidden lg:flex lg:flex-1">
           <Image
             src={landing}
-            alt="Test"
+            alt="Welcome to Devio"
             className="w-100% h-auto rounded-lg shadow-lg"
           />
         </div>
