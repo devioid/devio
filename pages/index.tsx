@@ -7,6 +7,7 @@ import { Platforms } from '@components/sections/platforms'
 import { Showcase } from '@components/sections/showcase'
 import { Services } from 'components/sections/services'
 import { WhyUs } from 'components/sections/why-us'
+import { Developer } from '@components/sections/developers'
 import { ScrollProvider } from 'contexts/scroll'
 import type { NextPage } from 'next'
 import Head from 'next/head'
@@ -35,6 +36,7 @@ const Index: NextPage = () => {
         <WhyUs />
         <HowDoWeWork />
         <Showcase />
+        <Developer />
         <Ending />
       </Layout>
     </ScrollProvider>

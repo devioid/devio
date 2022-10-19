@@ -11,11 +11,16 @@ export const Card = ({
   title,
   body,
   options,
+  children,
 }: {
-  title: string
-  body: string
+  title?: string
+  body?: string
   options?: ScrollOptions
+  children?: any
 }) => {
+
+  const content = children ??
+    <><div className={styles['card-title']}>{title}</div> <p className={styles['card-body']}>{body}</p></>
   return (
     <div
       data-scroll={options && options.scroll}
@@ -24,8 +29,7 @@ export const Card = ({
       data-scroll-direction={options && options.direction}
       className={styles.card}
     >
-      <div className={styles['card-title']}>{title}</div>
-      <p className={styles['card-body']}>{body}</p>
+      {content}
     </div>
   )
 }

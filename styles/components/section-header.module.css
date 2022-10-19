@@ -1,5 +1,5 @@
 .section-header {
-  @apply flex w-full flex-col items-center justify-center bg-transparent pt-12 pb-10 font-medium md:space-y-4 md:pt-20 md:pb-32;
+  @apply flex w-full flex-col items-center justify-center bg-transparent pt-12 pb-10 font-medium md:space-y-4 md:pt-20 md:pb-20;
 }
 
 .section-header .section-title {
