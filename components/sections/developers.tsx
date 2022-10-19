@@ -11,7 +11,7 @@ export const Developer = () => {
         <div className="grid gap-5 md:grid-cols-2 md:gap-10 xl:gap-10 px-10">
           <Card>
             <div className="flex gap-4 flex-col lg:flex-row items-center lg:items-left">
-              <div className="w-[100px]">
+              <div className="w-[100px] md:min-w-[100px] md:max-w-[100px]">
                 <Image src={AvatarBlank}></Image>
               </div>
               <div className="flex flex-col justify-center">
@@ -27,7 +27,7 @@ export const Developer = () => {
           </Card>
           <Card>
             <div className="flex gap-4 flex-col lg:flex-row items-center lg:items-left">
-              <div className="w-[100px]">
+              <div className="w-[100px] md:min-w-[100px] md:max-w-[100px]">
                 <Image src={AvatarBlank}></Image>
               </div>
               <div className="flex flex-col justify-center">
