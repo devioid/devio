@@ -2,6 +2,7 @@ import { Layout } from '@components/layouts/layout'
 import { Ending } from '@components/sections/ending'
 import { Home } from '@components/sections/home'
 import { HowDoWeWork } from '@components/sections/how-do-we-work'
+import Loading from '@components/sections/loading'
 import { Platforms } from '@components/sections/platforms'
 import { Showcase } from '@components/sections/showcase'
 import { Services } from 'components/sections/services'
@@ -14,7 +15,7 @@ const Index: NextPage = () => {
   return (
     <ScrollProvider>
       <Head>
-        <title>Devio</title>
+        <title>Devio ID</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
@@ -24,6 +25,9 @@ const Index: NextPage = () => {
         <meta name="language" content="English"></meta>
         <meta http-equiv="content-language" content="en" />
       </Head>
+
+      {/* <Loading/> */}
+
       <Layout>
         <Home />
         <Services />

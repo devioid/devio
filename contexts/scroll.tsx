@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from 'react'
 import { useWindowDimensions } from 'hooks'
+import Loading from '@components/sections/loading'
 
 export const ScrollContext = createContext({
   scroll: null,
@@ -58,7 +59,9 @@ export const ScrollProvider = ({ children }: { children: any }) => {
   }, [scroll])
 
   if (!scroll) {
-    return <p>Loading...</p>
+    return (
+      <Loading/>
+    )
   }
 
   return (
