@@ -20,7 +20,7 @@ export const Showcase = () => {
       <SectionContentHalf
         header="Accounting Information System"
         imageSrc={accounting}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultricies fermentum. Praesent nec vulputate urna. Maecenas dolor libero, commodo et quam quis, ullamcorper auctor risus. "
+        description="Successfully migrate from the old method of financial recording (using a spreadsheet) to the new system. The new application has many features, such as a collaboration feature to get a record from another stakeholder, a live report, and a dashboard for financial monitoring."
         fullscreen={true}
         reverse={true}
       >
@@ -31,7 +31,7 @@ export const Showcase = () => {
       <SectionContentHalf
         header="Academic Information System"
         imageSrc={academic}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ultricies fermentum. Praesent nec vulputate urna. Maecenas dolor libero, commodo et quam quis, ullamcorper auctor risus. "
+        description="Migrate from the older and offline system to the new online environment. We develop a whole new application with additional features, such as tuition tracking system. We offer scalability to ensure the application can be modified and extend in the future, for example making a student's portal application."
         fullscreen={true}
         reverse={false}
       >
